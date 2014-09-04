@@ -1,0 +1,14 @@
+{
+  "name": "moravia-styleguide",
+  "version": "1.0.0",
+  "description": "", 
+  "private": true, 
+  "author": "Luboš Schrámek <LSchramek@moravia.com>",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
