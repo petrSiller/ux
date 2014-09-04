@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moravia Styleguide | Features</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="assets/css/styleguide.css" rel="stylesheet">
+    <link href="assets/css/nprogress.css" rel="stylesheet">
+    <style>
+
+      body > #wrapper {
+        padding-top: 60px;
+      }
+
+      #back-top {
+        position: fixed;
+        bottom: -50px;
+        right: 30px;
+        z-index: 1;
+
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+        text-align: center;
+        background-color: #f8f8f8;
+        border: 1px solid #e7e7e7;
+        color: #555;
+        font-size: 24px;
+        
+        /* rounded corners */
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        
+        /* transition */
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+      #back-top:hover {
+        color: #1058a9;
+      }
+      #back-top.visible {
+        bottom: 30px;
+      }
+
+      .loading {
+        width:300px;
+        height:200px;
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin:-100px 0 0 -150px;
+      }
+
+      .animation-fadein {
+        opacity: 1;
+          -webkit-animation: first 2s; /* Safari and Chrome */
+             -moz-animation: first 2s; /* Firefox */
+              -ms-animation: first 2s; /* Internet Explorer */
+               -o-animation: first 2s; /* Opera */
+                  animation: first 2s; 
+      }
+      .animation-fadeout {
+        opacity: 0;
+          -webkit-animation: second 1s; /* Safari and Chrome */
+             -moz-animation: second 1s; /* Firefox */
+              -ms-animation: second 1s; /* Internet Explorer */
+               -o-animation: second 1s; /* Opera */
+                  animation: second 1s; 
+      }
+
+      @keyframes first {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Firefox */
+      @-moz-keyframes first {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Safari and Chrome */
+      @-webkit-keyframes first {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Internet Explorer */
+      @-ms-keyframes first {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }​
+
+      /* Opera */
+      @-o-keyframes first {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }​
+
+      @keyframes second {
+          from { opacity: 1; }
+          to   { opacity: 0; }
+      }
+
+      /* Firefox */
+      @-moz-keyframes second {
+          from { opacity: 1; }
+          to   { opacity: 0; }
+      }
+
+      /* Safari and Chrome */
+      @-webkit-keyframes second {
+          from { opacity: 1; }
+          to   { opacity: 0; }
+      }
+
+      /* Internet Explorer */
+      @-ms-keyframes second {
+          from { opacity: 1; }
+          to   { opacity: 0; }
+      }​
+
+      /* Opera */
+      @-o-keyframes second {
+          from { opacity: 1; }
+          to   { opacity: 0; }
+      }​
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <div class="loading">
+      <img src="assets/img/moravia.png" alt="" />
+      <h1>Loading...</h1>
+    </div>
+
+    <div id="wrapper">
+
+      <a id="back-top" href="#top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="assets/img/moravia_small.png" alt="" /><span>Styleguide</span></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Getting started</a></li>
+              <li><a href="css.html">CSS</a></li>
+              <li class="active"><a href="features.html">Features</a></li>
+              <li><a href="https://github.com/Moravia/ux/tree/master">Download</a></li>
+            </ul>        
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9">
+            
+            <!-- Features
+            ================================================== -->
+            <div class="page-header">
+              <h1 id="features">Hey! There are some awesome <em>Features</em>!</h1>
+              <p class="alert alert-danger">Features aren't actually part of Moravia bootstrap!</p>
+            </div>
+
+            <!-- Progress bar
+            ================================================== -->
+            <h2 id="progress">Progress bar</h2>
+            <p class="lead">This "youtube" progress bar show us a progress of changing state to another.</p>
+            <button class="btn btn-primary" id="nstart"><i class="glyphicon glyphicon-play"></i> Start</button>
+            <button class="btn btn-default" id="ninc"><i class="glyphicon glyphicon-play"></i> Increment</button>
+            <button class="btn btn-success" id="nend"><i class="glyphicon glyphicon-play"></i> Done</button>
+
+            <hr />
+
+            <!-- Loading page
+            ================================================== -->
+            <h2 id="loadingpage">Loading page</h2>
+            <p class="lead">Block is centered:
+              <code>
+                .loading {
+                  width:300px;
+                  height:200px;
+                  position:absolute;
+                  left:50%;
+                  top:50%;
+                  margin:-100px 0 0 -150px;
+                }
+              </code>
+            </p>
+            <button class="btn btn-primary" id="loadingstart"><i class="glyphicon glyphicon-play"></i> Start</button>
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Moravia logo</h2>
+                <img src="assets/img/moravia.png" alt="" />
+              </div>
+              <div class="col-md-6">
+                <h2>Text "Loading..."</h2>
+                <p class="lead">It is native Bootstrap h1 tag.</p>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Bootstrap Tour
+            ================================================== -->
+            <h2 id="bootstraptour">Bootstrap Tour</h2>
+            <p class="lead">The easiest way to show people how to use your website.</p>
+            <a href="http://bootstraptour.com/" title="" class="btn btn-primary">Go to Bootstrap Tour</a>
+
+            <hr />
+
+            <!-- Select2 with BS3
+            ================================================== -->
+            <h2 id="select2">Select2 with BS3</h2>
+            <p class="lead">I found a great solution how to redefine Select2 CSS to Bootstrap design.</p>
+            <a href="http://fk.github.io/select2-bootstrap-css/" title="" class="btn btn-primary">Go to Select2 with BS3</a>
+            
+            <hr />
+
+            <!-- Datatables with BS3
+            ================================================== -->
+            <h2 id="datatables">Datatables with BS3</h2>
+            <p class="lead">Datatables.net has a extension to Bootstrap 3 style.</p>
+            <a href="http://datatables.net/manual/styling/bootstrap-simple.html" title="" class="btn btn-primary">Go to Datatables example</a>
+
+            <hr />
+
+            <!-- Loading buttons
+            ================================================== -->
+            <h2 id="ladda">Loading buttons</h2>
+            <p class="lead">Original UI concept by @hakimel which merges loading indicators into the action that invoked them. Primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing.</p>
+            <a href="http://msurguy.github.io/ladda-bootstrap/" title="" class="btn btn-primary">Go to Ladda example</a>
+
+            <hr />
+
+            <!-- Go to top
+            ================================================== -->
+            <h2 id="gototop">Go to top</h2>
+            <p class="lead">This feature is important because we can a lot of pages which are really long. </p>
+            <p>Demo is in right bottom corner in this page.</p>
+
+          </div>
+
+          <div class="col-md-3">
+            <div data-spy="affix" data-offset-bottom="100">
+              <div id="affix" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+                <ul class="nav bs-docs-sidenav">
+                  <li><a href="#progress">Progress bar</a></li>
+                  <li><a href="#loadingpage">Loading page</a></li>
+                  <li><a href="#bootstraptour">Bootstrap Tour</a></li>
+                  <li><a href="#select2">Select2 with BS3</a></li>
+                  <li><a href="#datatables">Datatables with BS3</a></li>
+                  <li><a href="#ladda">Loading buttons</a></li>
+                  <li><a href="#gototop">Go to top</a></li>
+                </ul>
+                <a class="back-to-top" href="#top">Back to top</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="source-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Source Code</h4>
+            </div>
+            <div class="modal-body">
+              <pre></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <p class="text-muted text-center">
+              © 2012 - 2014 <a href="http://www.moravia.com/">Moravia IT a.s.</a> All rights reserved.
+            </p>
+          </div>  
+        </div>
+      </div>
+
+    </div>
+
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/jquery-ui-1.10.4.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.nprogress.js"></script>
+    <script>
+      $(document).ready(function() {
+
+        $("#nstart").click(function() { NProgress.start(); });
+        $("#ninc").click(function() { NProgress.inc(); });
+        $("#nend").click(function() { NProgress.done(); });
+
+        $(".loading").hide();
+        $("#loadingstart").click(function() {
+
+
+          var wrapper = $("#wrapper");
+          
+          // RESET
+          $(".loading").show();
+          wrapper.hide();
+          wrapper.removeClass("animation-fadein");
+          $('.fade').addClass('out'); 
+          $(".loading").addClass("animation-fadein");
+          $(".loading").removeClass("animation-fadeout");
+
+          NProgress.start();
+          $(".loading").addClass("animation-fadein");
+
+          setTimeout(function() {
+            NProgress.done(); 
+            $('.fade').removeClass('out'); 
+            $(".loading").removeClass("animation-fadein");
+            $(".loading").addClass("animation-fadeout");
+
+            setTimeout(function() {
+              wrapper.show();
+              wrapper.addClass("animation-fadein");
+
+              $('[data-spy="scroll"]').each(function () {
+                var $spy = $(this).scrollspy('refresh');
+              });
+              
+              // fade in #back-top
+              $(function () {
+                $(window).scroll(function () {
+                  if ($(this).scrollTop() > 100) {
+                    $('#back-top').addClass("visible");
+                  } else {
+                    $('#back-top').removeClass("visible");
+                  }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top').click(function () {
+                  $('body,html').animate({
+                    scrollTop: 0
+                  }, 800);
+                  return false;
+                });
+              });
+
+            }, 1000);
+
+          }, 3000);
+
+        });
+      });
+    </script>
+    <script>
+      (function(){
+
+        var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>Show source code</div>").click(function(){
+          var html = $(this).parent().html();
+          html = cleanSource(html);
+          $("#source-modal pre").text(html);
+          $("#source-modal").modal();
+        });
+
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+
+        $(".bs-component").hover(function(){
+          $(this).append($button);
+          $button.show();
+        }, function(){
+          $button.hide();
+        });
+
+        function cleanSource(html) {
+          var lines = html.split(/\n/);
+
+          lines.shift();
+          lines.splice(-1, 1);
+
+          var indentSize = lines[0].length - lines[0].trim().length,
+              re = new RegExp(" {" + indentSize + "}");
+
+          lines = lines.map(function(line){
+            if (line.match(re)) {
+              line = line.substring(indentSize);
+            }
+
+            return line;
+          });
+
+          lines = lines.join("\n");
+
+          return lines;
+        }
+
+      })();
+    </script>
+  </body>
+</html>
