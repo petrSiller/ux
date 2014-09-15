@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Moravia Styleguide | CSS</title>
+    <!-- DEV
+    <link href="../master/dist/css/moravia.css" rel="stylesheet">
+    -->
     <link href="bootstrap/css/moravia.min.css" rel="stylesheet">
     <link href="assets/css/styleguide.css" rel="stylesheet">
   </head>
@@ -30,7 +33,10 @@
             <li class="active"><a href="css.html">CSS</a></li>
             <li><a href="features.html">Features</a></li>
             <li><a href="https://github.com/Moravia/ux/tree/master">Download</a></li>
-          </ul>        
+          </ul>
+          <div class="navbar-right navbar-buttons">
+            <a href="mailto:lschramek@moravia.com" class="btn btn-default" title=""><i class="glyphicon glyphicon-heart-empty text-danger"></i> Leave feedback</a>
+          </div>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -70,11 +76,21 @@
                     <li class="active"><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
                     <li><a href="components.html">Link 3</a></li>
-                  </ul>        
-                  <div class="navbar-right">
-                    <a href="/Home" rel="tooltip" class="btn btn-default btn-circle navbar-btn" data-toggle="tooltip" data-placement="bottom" title="Back to home"><i class="glyphicon glyphicon-home"></i></a>
+                  </ul>
+                  <div class="navbar-right navbar-buttons">
+                      <a href="/Home" rel="tooltip" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="User profile"><i class="glyphicon glyphicon-list"></i> Button</a>
+                      <a href="/Home" rel="tooltip" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="User profile"><i class="glyphicon glyphicon-list"></i> Small button</a>
+                      <a href="/Home" rel="tooltip" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="bottom" title="User profile"><i class="glyphicon glyphicon-list"></i> Extra small button</a>
+                      <a href="/Home" rel="tooltip" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="User profile"><i class="glyphicon glyphicon-user"></i></a>
+                      <a href="/Home" rel="tooltip" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="User profile"><i class="glyphicon glyphicon-user"></i></a>
+                      <a href="/Home" rel="tooltip" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="bottom" title="User profile"><i class="glyphicon glyphicon-user"></i></a>
                   </div>
                 </div><!--/.nav-collapse -->
+                <ul class="breadcrumb">
+                  <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                  <li><a href="#">Library</a></li>
+                  <li class="active">Data</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1036,8 +1052,8 @@
           $("#source-modal").modal();
         });
 
-        $('.bs-component [data-toggle="popover"]').popover();
-        $('.bs-component [data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="tooltip"]').tooltip();
 
         $(".bs-component").hover(function(){
           $(this).append($button);
