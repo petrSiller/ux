@@ -19,21 +19,6 @@
 @brand-danger:          #ac1d13;
 
 
-//== Scaffolding
-//
-//## Settings for some of the most global styles.
-
-//** Background color for `<body>`.
-@body-bg:               #fff;
-//** Global text color on `<body>`.
-@text-color:            @gray;
-
-//** Global textual link color.
-@link-color:            @brand-primary;
-//** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@link-color, 15%);
-
-
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
@@ -66,6 +51,45 @@
 @headings-line-height:    1.1;
 @headings-color:          @gray-dark;
 
+//== Type
+//
+//##
+
+//** Horizontal offset for forms and lists.
+@component-offset-horizontal: 180px;
+//** Text muted color
+@text-muted:                  @gray-lighter;
+//** Abbreviations and acronyms border color
+@abbr-border-color:           @gray-light;
+//** Headings small color
+@headings-small-color:        @gray-light;
+//** Blockquote small color
+@blockquote-small-color:      @gray-light;
+//** Blockquote font size
+@blockquote-font-size:        (@font-size-base * 1.25);
+//** Blockquote border color
+@blockquote-border-color:     @gray-lighter;
+//** Page header border color
+@page-header-border-color:    @gray-lighter;
+//** Width of horizontal description list titles
+@dl-horizontal-offset:        @component-offset-horizontal;
+//** Horizontal line color.
+@hr-border:                   @gray-lighter;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #FCFCFC;
+//** Global text color on `<body>`.
+@text-color:            @gray;
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
 
 //== Iconography
 //
@@ -217,6 +241,12 @@
 //** Divider color for between dropdown items.
 @dropdown-divider-bg:            #e5e5e5;
 
+//todo TG 25.8. have to be moved, due to errors in browsers (using not yet defined variable)
+//** Active dropdown menu item text color.
+@dropdown-link-active-color:     #fff;
+//** Active dropdown menu item background color.
+@dropdown-link-active-bg:        @component-active-bg;
+
 //** Dropdown link text color.
 @dropdown-link-color:            @gray-dark;
 //** Hover color for dropdown links.
@@ -224,10 +254,7 @@
 //** Hover background for dropdown links.
 @dropdown-link-hover-bg:         @dropdown-link-active-bg;
 
-//** Active dropdown menu item text color.
-@dropdown-link-active-color:     #fff;
-//** Active dropdown menu item background color.
-@dropdown-link-active-bg:        @component-active-bg;
+
 
 //** Disabled dropdown menu item background color.
 @dropdown-link-disabled-color:   @text-muted;
@@ -684,13 +711,15 @@
 @panel-footer-padding:        @panel-heading-padding;
 @panel-border-radius:         @border-radius-base;
 
+//todo TG 25.8. have to be moved, due to errors in browsers (using not yet defined variable)
 //** Border color for elements within panels
-@panel-inner-border:          #ddd;
-@panel-footer-bg:             @panel-default-heading-bg;
 
 @panel-default-text:          @gray-dark;
 @panel-default-border:        #ddd;
 @panel-default-heading-bg:    @body-bg;
+
+@panel-inner-border:          #ddd;
+@panel-footer-bg:             @panel-default-heading-bg;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
@@ -815,31 +844,5 @@
 @pre-color:                   @gray-dark;
 @pre-border-color:            #ccc;
 @pre-scrollable-max-height:   340px;
-
-
-//== Type
-//
-//##
-
-//** Horizontal offset for forms and lists.
-@component-offset-horizontal: 180px;
-//** Text muted color
-@text-muted:                  @gray-lighter;
-//** Abbreviations and acronyms border color
-@abbr-border-color:           @gray-light;
-//** Headings small color
-@headings-small-color:        @gray-light;
-//** Blockquote small color
-@blockquote-small-color:      @gray-light;
-//** Blockquote font size
-@blockquote-font-size:        (@font-size-base * 1.25);
-//** Blockquote border color
-@blockquote-border-color:     @gray-lighter;
-//** Page header border color
-@page-header-border-color:    @gray-lighter;
-//** Width of horizontal description list titles
-@dl-horizontal-offset:        @component-offset-horizontal;
-//** Horizontal line color.
-@hr-border:                   @gray-lighter;
 
 
