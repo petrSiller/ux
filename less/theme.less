@@ -65,8 +65,8 @@
     color: @brand-primary;
   }
   .navbar-buttons {
-    line-height: @navbar-height;
-    height: @navbar-height;
+    line-height: @navbar-height - 4;
+    height: @navbar-height - 4;
   }
   .breadcrumb {
     border-top: 1px solid @gray-lighter;
@@ -75,6 +75,16 @@
   }
 
 }
+
+// Page header
+// -------------------------
+
+.page-header {
+  padding-bottom: 0;
+  margin: 10px 0;
+  border-bottom: 1px solid @page-header-border-color;
+}
+
 
 // Buttons ====================================================================
 .btn {
@@ -182,6 +192,10 @@ label {
 
 // Navs =======================================================================
 
+.pagination {
+  font-family: @headings-font-family;
+}
+
 .pager {
   a {
     color: @headings-color;
@@ -202,6 +216,11 @@ label {
 .label {
   font-weight: normal;
   letter-spacing: 1px;
+}
+
+// Badges =================================================================
+.badge {
+  font-family: @headings-font-family;
 }
 
 // Progress bars ==============================================================

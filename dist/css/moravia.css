@@ -6208,13 +6208,18 @@ button.close {
   color: #1058a9;
 }
 .navbar-default .navbar-buttons {
-  line-height: 50px;
-  height: 50px;
+  line-height: 46px;
+  height: 46px;
 }
 .navbar-default .breadcrumb {
   border-top: 1px solid #dddddd;
   padding: 5px 0px;
   margin: 0;
+}
+.page-header {
+  padding-bottom: 0;
+  margin: 10px 0;
+  border-bottom: 1px solid #dddddd;
 }
 .btn {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -6323,6 +6328,9 @@ label {
 .has-success .form-control:focus {
   border-color: #7ab51c;
 }
+.pagination {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .pager a {
   color: #444444;
 }
@@ -6337,6 +6345,9 @@ label {
 .label {
   font-weight: normal;
   letter-spacing: 1px;
+}
+.badge {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 html {
   position: relative;
