@@ -13,8 +13,7 @@
 .bs-docs-sidebar .nav > li > a {
   display: block;
   padding: 4px 20px;
-  font-size: 13px;
-  color: #777;
+  color: #444;
 }
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
@@ -39,18 +38,16 @@
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 13px;
 }
 .bs-docs-sidebar .nav .nav > li > a:hover,
 .bs-docs-sidebar .nav .nav > li > a:focus {
-  padding-left: 29px;
+  padding-left: 30px;
 }
 .bs-docs-sidebar .nav .nav > .active > a,
 .bs-docs-sidebar .nav .nav > .active:hover > a,
 .bs-docs-sidebar .nav .nav > .active:focus > a {
   padding-left: 28px;
-  font-weight: 500;
 }
 @media (min-width: 768px) {
   .back-to-top {
