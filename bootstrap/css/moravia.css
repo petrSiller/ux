@@ -6228,9 +6228,12 @@ button.close {
   line-height: 46px;
   height: 46px;
 }
+.navbar-default .line {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
 .navbar-default .breadcrumb {
-  border-top: 1px solid #f7f7f7;
-  padding: 5px 0px;
+  padding: 0 0 5px;
   margin: 0;
 }
 .page-header {
