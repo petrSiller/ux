@@ -83,11 +83,11 @@
 }
 h1[id],
 h2[id] {
-  padding-top: 60px;
-  margin-top: -60px;
+  padding-top: 90px;
+  margin-top: -90px;
 }
 body > .container-fluid {
-  padding: 60px 15px 0;
+  padding: 90px 15px 0;
 }
 .project-img {
   max-width: 100%;
