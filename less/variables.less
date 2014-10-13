@@ -10,7 +10,7 @@
 @gray-dark:              #444;
 @gray:                   #777;
 @gray-light:             #808080;
-@gray-lighter:           #f7f7f7;
+@gray-lighter:           #eee;
 
 @brand-primary:         #1058a9;
 @brand-success:         #7ab51c;
@@ -68,13 +68,13 @@
 //** Blockquote font size
 @blockquote-font-size:        (@font-size-base * 1.25);
 //** Blockquote border color
-@blockquote-border-color:     @gray-lighter;
+@blockquote-border-color:     #ccc;
 //** Page header border color
-@page-header-border-color:    @gray-lighter;
+@page-header-border-color:    #ccc;
 //** Width of horizontal description list titles
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Horizontal line color.
-@hr-border:                   @gray-lighter;
+@hr-border:                   #ccc;
 
 
 //== Scaffolding
@@ -151,11 +151,11 @@
 //** Background color used for `.table-striped`.
 @table-bg-accent:               #f9f9f9;
 //** Background color used for `.table-hover`.
-@table-bg-hover:                #f7f7f7;
+@table-bg-hover:                #eee;
 @table-bg-active:               @table-bg-hover;
 
 //** Border color for table and cell borders.
-@table-border-color:            #ddd;
+@table-border-color:            #ccc;
 
 
 //== Buttons
@@ -203,7 +203,7 @@
 //** Text color for `<input>`s
 @input-color:                    @text-color;
 //** `<input>` border color
-@input-border:                   #ddd;
+@input-border:                   #ccc;
 //** `<input>` border radius
 @input-border-radius:            @border-radius-base;
 //** Border color for inputs on focus
@@ -370,7 +370,7 @@
 
 @navbar-default-color:             @gray-dark;
 @navbar-default-bg:                #fff;
-@navbar-default-border:            @gray-lighter;
+@navbar-default-border:            #ccc;
 
 // Navbar links
 @navbar-default-link-color:                @gray-dark;
@@ -387,9 +387,9 @@
 @navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
-@navbar-default-toggle-hover-bg:           #ddd;
+@navbar-default-toggle-hover-bg:           #ccc;
 @navbar-default-toggle-icon-bar-bg:        #ccc;
-@navbar-default-toggle-border-color:       #ddd;
+@navbar-default-toggle-border-color:       #ccc;
 
 
 // Inverted navbar
@@ -432,15 +432,15 @@
 @nav-open-link-hover-color:                 #fff;
 
 //== Tabs
-@nav-tabs-border-color:                     #ddd;
+@nav-tabs-border-color:                     #ccc;
 
 @nav-tabs-link-hover-border-color:          @gray-lighter;
 
 @nav-tabs-active-link-hover-bg:             @body-bg;
 @nav-tabs-active-link-hover-color:          @gray;
-@nav-tabs-active-link-hover-border-color:   #ddd;
+@nav-tabs-active-link-hover-border-color:   #ccc;
 
-@nav-tabs-justified-link-border-color:            #ddd;
+@nav-tabs-justified-link-border-color:            #ccc;
 @nav-tabs-justified-active-link-border-color:     @body-bg;
 
 //== Pills
@@ -455,7 +455,7 @@
 
 @pagination-color:                     @headings-color;
 @pagination-bg:                        #fff;
-@pagination-border:                    #ddd;
+@pagination-border:                    #ccc;
 
 @pagination-hover-color:               #fff;
 @pagination-hover-bg:                  @brand-primary;
@@ -467,7 +467,7 @@
 
 @pagination-disabled-color:            @gray-light;
 @pagination-disabled-bg:               #fff;
-@pagination-disabled-border:           #ddd;
+@pagination-disabled-border:           #ccc;
 
 
 //== Pager
@@ -651,7 +651,7 @@
 //##
 
 //** Background color of the whole progress component
-@progress-bg:                 #f7f7f7;
+@progress-bg:                 #eee;
 //** Progress bar text color
 @progress-bar-color:          #fff;
 
@@ -674,12 +674,12 @@
 //** Background color on `.list-group-item`
 @list-group-bg:                 #fff;
 //** `.list-group-item` border color
-@list-group-border:             #ddd;
+@list-group-border:             #ccc;
 //** List group border radius
 @list-group-border-radius:      @border-radius-base;
 
 //** Background color of single list items on hover
-@list-group-hover-bg:           #f7f7f7;
+@list-group-hover-bg:           #eee;
 //** Text color of active list items
 @list-group-active-color:       @component-active-color;
 //** Background color of active list items
@@ -715,10 +715,10 @@
 //** Border color for elements within panels
 
 @panel-default-text:          @gray-dark;
-@panel-default-border:        #ddd;
+@panel-default-border:        #ccc;
 @panel-default-heading-bg:    @gray-lighter;
 
-@panel-inner-border:          #ddd;
+@panel-inner-border:          #ccc;
 @panel-footer-bg:             @panel-default-heading-bg;
 
 @panel-primary-text:          #fff;
@@ -751,7 +751,7 @@
 //** Thumbnail background color
 @thumbnail-bg:                @body-bg;
 //** Thumbnail border color
-@thumbnail-border:            #ddd;
+@thumbnail-border:            #ccc;
 //** Thumbnail border radius
 @thumbnail-border-radius:     @border-radius-base;
 
@@ -765,8 +765,8 @@
 //
 //##
 
-@well-bg:                     darken(@body-bg, 3%);
-@well-border:                 darken(@well-bg, 7%);
+@well-bg:                     #eee;
+@well-border:                 #ccc;
 
 
 //== Badges
@@ -835,14 +835,12 @@
 //##
 
 @code-color:                  @brand-primary;
-@code-bg:                     #f7f7f7;
+@code-bg:                     #eee;
 
 @kbd-color:                   #fff;
 @kbd-bg:                      #333;
 
-@pre-bg:                      #f7f7f7;
+@pre-bg:                      #eee;
 @pre-color:                   @gray-dark;
 @pre-border-color:            #ccc;
 @pre-scrollable-max-height:   340px;
-
-
