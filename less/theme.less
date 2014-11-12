@@ -199,6 +199,14 @@ legend {
 label {
   font-weight: normal;
 }
+
+.required label:after { 
+  content:" *";
+  color: #999;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .label-default {
   color: @headings-color;
 }

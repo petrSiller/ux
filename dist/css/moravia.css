@@ -6231,6 +6231,15 @@ button.close {
   line-height: 46px;
   height: 46px;
 }
+.navbar-default .navbar-buttons .notification {
+  position: relative;
+  margin-right: 25px;
+}
+.navbar-default .navbar-buttons .notification .badge {
+  position: absolute;
+  top: -8px;
+  left: 17px;
+}
 .navbar-default .line {
   margin-bottom: 5px;
   margin-top: 0;
@@ -6324,6 +6333,12 @@ legend {
 label {
   font-weight: normal;
 }
+.required label:after {
+  content: " *";
+  color: #999;
+  font-weight: bold;
+  font-size: 15px;
+}
 .label-default {
   color: inherit;
 }
@@ -6372,21 +6387,24 @@ label {
 .badge {
   font-family: inherit;
 }
+.badge.badge-danger {
+  background: #b94a48;
+}
 html {
   position: relative;
   min-height: 100%;
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 40px;
 }
 #footer .container-fluid .text-center {
-  margin: 20px 0;
+  margin: 10px 0;
 }
